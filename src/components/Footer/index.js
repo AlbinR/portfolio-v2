@@ -1,15 +1,8 @@
 import React from "react";
+import { FooterContainer, FooterWrapper, FooterLinks } from "./FooterElements";
 
 const Footer = () => {
-  return (
-    <FooterContainer>
-      <FooterWrapper>
-        <FooterEmail>albin@rybergs.net</FooterEmail>
-        <FooterCopyright>Albin Ryberg</FooterCopyright>
-        <FooterLinks></FooterLinks>
-      </FooterWrapper>
-    </FooterContainer>
-  );
+  return <FooterContainer></FooterContainer>;
 };
 
 export default Footer;

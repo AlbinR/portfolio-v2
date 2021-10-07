@@ -5,6 +5,7 @@ import Navbar from "../components/Navbar";
 import PortfolioSection from "../components/PortfolioSection";
 import Sidebar from "../components/Sidebar";
 import ContactSection from "../components/ContactSection";
+import Footer from "../components/Footer";
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,6 +22,7 @@ const Home = () => {
       <AboutSection />
       <PortfolioSection />
       <ContactSection />
+      <Footer />
     </>
   );
 };
