@@ -3,10 +3,10 @@ import styled from "styled-components";
 export const HeroContainer = styled.div`
   background: #0c0c0c;
   display: flex;
-  justify-content: center;
   align-items: center;
+  width: 100%;
   padding: 0 30px;
-  height: 100vh;
+  min-height: 100vh;
   position: relative;
   z-index: 1;
 
@@ -47,15 +47,55 @@ export const VideoBg = styled.video`
 
 export const HeroContent = styled.div`
   z-index: 3;
-  max-width: 1200px;
-  position: absolute;
-  padding: 8px 24px;
+  width: 100%;
   display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
+  justify-content: center;
+  flex-direction: column;
+`;
+export const Header = styled.div`
+  display: flex;
+  justify-content: space-around;
   align-items: center;
+  color: #fff;
+  margin-bottom: 50px;
+`;
+export const Text = styled.div``;
+export const Title = styled.div`
+  font-size: 90px;
+  border-bottom: 1px solid #4b8ea9;
+  width: fit-content;
+`;
+export const Name = styled.div`
+  font-size: 60px;
+  border-bottom: 1px solid #4b8ea9;
+  width: fit-content;
+`;
+export const Intro = styled.div`
+  font-size: 30px;
+  border-bottom: 1px solid #4b8ea9;
+  width: fit-content;
+`;
+export const ImageContainer = styled.div``;
+
+export const ImageDiv = styled.div`
+  background-color: #fff;
+  width: 400px;
+  height: 400px;
+  border-radius: 100px;
 `;
 
-export const Heading = styled.div`
+export const Buttons = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const Btn = styled.button`
+  width: 100px;
+  padding: 10px;
+  margin: 0 10px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 20px;
   color: #fff;
+  border-bottom: 2px solid #4b8ea9;
 `;

@@ -6,9 +6,16 @@ import {
   HeroBg,
   VideoBg,
   HeroContent,
-  Heading,
+  Header,
+  ImageDiv,
+  Text,
+  Title,
+  Name,
+  Intro,
+  ImageContainer,
+  Buttons,
+  Btn,
 } from "./HeroElements";
-import { Card } from "../Cards";
 
 const HeroSection = () => {
   return (
@@ -17,11 +24,27 @@ const HeroSection = () => {
         <VideoBg autoPlay loop muted src={Video} type="video/mp4" />
       </HeroBg>
       <HeroContent>
-        <Card imageUrl="/" />
-        <Heading>
-          <h1>Albin Ryberg</h1>
-          <h2>Front-End developer</h2>
-        </Heading>
+        <Header>
+          <Text>
+            <Title>
+              <h1>Hello,</h1>
+            </Title>
+            <Name>
+              <h2>My name is Albin Ryberg</h2>
+            </Name>
+            <Intro>
+              <h2>I am a front-end developer studying at KYH in Stockholm</h2>
+            </Intro>
+          </Text>
+          <ImageContainer>
+            <ImageDiv />
+          </ImageContainer>
+        </Header>
+        <Buttons>
+          <Btn class="draw">About</Btn>
+          <Btn class="draw">Portfolio</Btn>
+          <Btn class="draw">Contact</Btn>
+        </Buttons>
       </HeroContent>
     </HeroContainer>
   );

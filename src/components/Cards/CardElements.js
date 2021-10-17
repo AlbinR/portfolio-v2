@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const CardContainer = styled.div`
-  width: 300px;
+  width: 200px;
+  height: 400px;
   overflow: hidden;
   box-shadow: 0px 0px 15px -5px;
   color: #fff;
@@ -10,11 +11,13 @@ export const CardContainer = styled.div`
   &:hover {
     transform: scale(1.1);
   }
+  @media screen and (max-width: 768px) {
+    width: 200px;
+  }
 `;
 
 export const ImageContainer = styled.div`
   overflow: hidden;
-  height: 200px;
 `;
 
 export const CardTitle = styled.div`
