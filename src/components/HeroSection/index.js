@@ -1,5 +1,6 @@
 import React from "react";
 import Video from "../../videos/video.mp4";
+import Image from "../../images/albin.jpg";
 
 import {
   HeroContainer,
@@ -7,7 +8,7 @@ import {
   VideoBg,
   HeroContent,
   Header,
-  ImageDiv,
+  ImageAr,
   Text,
   Title,
   Name,
@@ -30,14 +31,15 @@ const HeroSection = () => {
               <h1>Hello,</h1>
             </Title>
             <Name>
-              <h2>My name is Albin Ryberg</h2>
+              <h2>My name is Albin Ryberg,</h2>
             </Name>
             <Intro>
-              <h2>I am a front-end developer studying at KYH in Stockholm</h2>
+              <h2>I am a front-end developer </h2>
+              <h2>studying at KYH in Stockholm</h2>
             </Intro>
           </Text>
           <ImageContainer>
-            <ImageDiv />
+            <ImageAr src={Image} alt="Albin" type="image/jpg" />
           </ImageContainer>
         </Header>
         <Buttons>

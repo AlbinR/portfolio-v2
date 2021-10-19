@@ -6,6 +6,7 @@ export const HeroContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding: 0 10px;
   min-height: 100vh;
   position: relative;
   z-index: 1;
@@ -58,51 +59,78 @@ export const Header = styled.div`
   align-items: center;
   color: #fff;
   margin-bottom: 50px;
-  @media screen and (max-width: 1000px) {
+  @media screen and (max-width: 768px) {
+    flex-wrap: wrap-reverse;
   } ;
 `;
-export const Text = styled.div``;
+export const Text = styled.div`
+  display: flex;
+  flex-direction: column;
+  @media screen and (max-width: 768px) {
+    font-size: 10px;
+    align-items: center;
+  } ;
+`;
 
 export const Title = styled.div`
   font-size: 80px;
   @media screen and (max-width: 768px) {
-    font-size: 40px;
+    font-size: 30px;
+    align-items: center;
   } ;
 `;
 export const Name = styled.div`
   font-size: 40px;
   @media screen and (max-width: 768px) {
-    font-size: 20px;
+    font-size: 10px;
+    align-items: center;
   } ;
 `;
 export const Intro = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
   font-size: 20px;
   @media screen and (max-width: 768px) {
     font-size: 10px;
+    align-items: center;
   } ;
 `;
 export const ImageContainer = styled.div`
-  @media screen and (max-width: 1000px) {
-    display: none;
+  width: 400px;
+  height: 400px;
+  @media screen and (max-width: 768px) {
+    width: 200px;
+    height: 200px;
   } ;
 `;
 
-export const ImageDiv = styled.div`
-  background-color: #fff;
-  width: 350px;
-  height: 350px;
+export const ImageAr = styled.img`
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
   border-radius: 1000px;
+  filter: grayscale(100%);
+  transition: 0.5s;
+  :hover {
+    filter: grayscale(0%);
+  }
 `;
 
 export const Buttons = styled.div`
   display: flex;
   justify-content: center;
+  align-items: center;
+  @media screen and (max-width: 425px) {
+    flex-direction: column;
+  } ;
 `;
 
 export const Btn = styled.button`
   width: 100px;
   padding: 10px;
-  margin: 0 10px;
+  margin: 10px;
   cursor: pointer;
   text-decoration: none;
   background-color: black;
