@@ -4,8 +4,8 @@ export const HeroContainer = styled.div`
   background: #0c0c0c;
   display: flex;
   align-items: center;
+  justify-content: center;
   width: 100%;
-  padding: 0 30px;
   min-height: 100vh;
   position: relative;
   z-index: 1;
@@ -58,30 +58,40 @@ export const Header = styled.div`
   align-items: center;
   color: #fff;
   margin-bottom: 50px;
+  @media screen and (max-width: 1000px) {
+  } ;
 `;
 export const Text = styled.div``;
+
 export const Title = styled.div`
-  font-size: 90px;
-  border-bottom: 1px solid #4b8ea9;
-  width: fit-content;
+  font-size: 80px;
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  } ;
 `;
 export const Name = styled.div`
-  font-size: 60px;
-  border-bottom: 1px solid #4b8ea9;
-  width: fit-content;
+  font-size: 40px;
+  @media screen and (max-width: 768px) {
+    font-size: 20px;
+  } ;
 `;
 export const Intro = styled.div`
-  font-size: 30px;
-  border-bottom: 1px solid #4b8ea9;
-  width: fit-content;
+  font-size: 20px;
+  @media screen and (max-width: 768px) {
+    font-size: 10px;
+  } ;
 `;
-export const ImageContainer = styled.div``;
+export const ImageContainer = styled.div`
+  @media screen and (max-width: 1000px) {
+    display: none;
+  } ;
+`;
 
 export const ImageDiv = styled.div`
   background-color: #fff;
-  width: 400px;
-  height: 400px;
-  border-radius: 100px;
+  width: 350px;
+  height: 350px;
+  border-radius: 1000px;
 `;
 
 export const Buttons = styled.div`
@@ -95,7 +105,9 @@ export const Btn = styled.button`
   margin: 0 10px;
   cursor: pointer;
   text-decoration: none;
+  background-color: black;
   font-size: 20px;
+  border: none;
   color: #fff;
   border-bottom: 2px solid #4b8ea9;
 `;
