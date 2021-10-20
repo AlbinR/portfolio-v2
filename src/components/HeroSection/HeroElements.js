@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { Link as LinkS } from "react-scroll";
 
 export const HeroContainer = styled.div`
   background: #0c0c0c;
@@ -6,7 +7,7 @@ export const HeroContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 0 10px;
+  padding: 0 20px;
   min-height: 100vh;
   position: relative;
   z-index: 1;
@@ -58,7 +59,7 @@ export const Header = styled.div`
   justify-content: space-around;
   align-items: center;
   color: #fff;
-  margin-bottom: 50px;
+  margin-bottom: 40px;
   @media screen and (max-width: 768px) {
     flex-wrap: wrap-reverse;
   } ;
@@ -66,34 +67,31 @@ export const Header = styled.div`
 export const Text = styled.div`
   display: flex;
   flex-direction: column;
-  @media screen and (max-width: 768px) {
-    font-size: 10px;
-    align-items: center;
-  } ;
+`;
+
+export const Underline = styled.span`
+  border-bottom: 2px solid #3498db;
 `;
 
 export const Title = styled.div`
-  font-size: 80px;
+  font-size: calc(20px + 3vw);
   @media screen and (max-width: 768px) {
-    font-size: 30px;
     align-items: center;
   } ;
 `;
 export const Name = styled.div`
-  font-size: 40px;
+  font-size: calc(15px + 1.2vw);
   @media screen and (max-width: 768px) {
-    font-size: 10px;
-    align-items: center;
+    font-size: 15px;
   } ;
 `;
 export const Intro = styled.div`
   display: flex;
   justify-content: center;
-  flex-direction: column;
-  font-size: 20px;
+  font-size: calc(5px + 1.2vw);
   @media screen and (max-width: 768px) {
     font-size: 10px;
-    align-items: center;
+    flex-direction: column;
   } ;
 `;
 export const ImageContainer = styled.div`
@@ -110,7 +108,7 @@ export const ImageAr = styled.img`
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-  border-radius: 1000px;
+  border-radius: 50%;
   filter: grayscale(100%);
   transition: 0.5s;
   :hover {
@@ -127,15 +125,32 @@ export const Buttons = styled.div`
   } ;
 `;
 
-export const Btn = styled.button`
-  width: 100px;
-  padding: 10px;
-  margin: 10px;
+export const Btn = styled(LinkS)`
+  box-sizing: border-box;
+  appearance: none;
+  background-color: transparent;
+  width: 110px;
+  border: 1px solid #3498db;
+  color: #3498db;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1;
+  margin: 10px;
+  padding: 10px;
   text-decoration: none;
-  background-color: black;
-  font-size: 20px;
-  border: none;
+  text-transform: uppercase;
+  border-color: #3498db;
   color: #fff;
-  border-bottom: 2px solid #4b8ea9;
+  box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
+  transition: all 150ms ease-in-out;
+  :hover,
+  :focus {
+    color: #fff;
+    outline: 0;
+    box-shadow: 0 0 10px 0 #3498db inset, 0 0 10px 4px#3498db;
+  }
 `;

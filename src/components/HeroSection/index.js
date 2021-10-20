@@ -1,4 +1,3 @@
-import React from "react";
 import Video from "../../videos/video.mp4";
 import Image from "../../images/albin.jpg";
 
@@ -16,6 +15,7 @@ import {
   ImageContainer,
   Buttons,
   Btn,
+  Underline,
 } from "./HeroElements";
 
 const HeroSection = () => {
@@ -31,11 +31,15 @@ const HeroSection = () => {
               <h1>Hello,</h1>
             </Title>
             <Name>
-              <h2>My name is Albin Ryberg,</h2>
+              <h2>
+                My name is <Underline>Albin Ryberg,</Underline>
+              </h2>
             </Name>
             <Intro>
-              <h2>I am a front-end developer </h2>
-              <h2>studying at KYH in Stockholm</h2>
+              <h2>
+                I am a front-end developer studying at
+                <Underline> KYH</Underline> in Stockholm
+              </h2>
             </Intro>
           </Text>
           <ImageContainer>
@@ -43,9 +47,36 @@ const HeroSection = () => {
           </ImageContainer>
         </Header>
         <Buttons>
-          <Btn class="draw">About</Btn>
-          <Btn class="draw">Portfolio</Btn>
-          <Btn class="draw">Contact</Btn>
+          <Btn
+            to="about"
+            smooth={true}
+            spy={true}
+            duration={500}
+            exact="true"
+            offset={-80}
+          >
+            About
+          </Btn>
+          <Btn
+            to="portfolio"
+            smooth={true}
+            spy={true}
+            duration={500}
+            exact="true"
+            offset={-80}
+          >
+            Portfolio
+          </Btn>
+          <Btn
+            to="contact"
+            smooth={true}
+            spy={true}
+            duration={500}
+            exact="true"
+            offset={-80}
+          >
+            Contact
+          </Btn>
         </Buttons>
       </HeroContent>
     </HeroContainer>

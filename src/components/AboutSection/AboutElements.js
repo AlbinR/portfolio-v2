@@ -3,20 +3,40 @@ import styled from "styled-components";
 export const AboutContainer = styled.div`
   color: #fff;
   background: #16202d;
-
-  @media screen and (max-width: 768px) {
-    padding: 100px 0;
-  }
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 2px solid white;
 `;
 
 export const AboutWrapper = styled.div`
-  display: grid;
-  z-index: 1;
-  height: 900px;
-  width: 100%;
-  max-width: 1100px;
-  margin-right: auto;
-  margin-left: auto;
-  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
+  margin: auto;
+  width: 100%;
+  min-height: 100%;
+`;
+
+export const AboutText = styled.div`
+  width: 80vw;
+  margin: auto;
+  border-radius: 10px;
+  margin-bottom: 6%;
+  h1 {
+    font-size: calc(16px + 3vw);
+    font-weight: bold;
+    padding: 20px;
+    margin: auto;
+  }
+  p {
+    font-size: calc(10px + 1.2vw);
+    margin-top: 5px;
+    padding: 20px;
+    letter-spacing: 2px;
+  }
 `;
