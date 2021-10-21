@@ -59,7 +59,7 @@ export const ItemBox = styled.div`
   }
 `;
 
-export const CircleDiv = styled.div`
+export const CircleDiv = styled.a`
   width: 150px;
   height: 150px;
   background-color: #171a21;
@@ -68,6 +68,13 @@ export const CircleDiv = styled.div`
   justify-content: center;
   align-items: center;
   border: solid 2px #65bef2;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  :hover {
+    outline: 0;
+    box-shadow: 0 0 10px 4px#3498db;
+  }
 `;
 export const GitIcon = styled(FaGithub)`
   font-size: 40px;

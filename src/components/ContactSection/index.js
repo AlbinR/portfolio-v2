@@ -22,21 +22,24 @@ const ContactSection = () => {
           </Title>
           <IconBox>
             <ItemBox>
-              <CircleDiv>
+              <CircleDiv href="https://github.com/AlbinR" target="_blank">
                 <GitIcon />
               </CircleDiv>
               <h1>GitHub</h1>
               <p>AlbinR</p>
             </ItemBox>
             <ItemBox>
-              <CircleDiv>
+              <CircleDiv
+                href="https://www.linkedin.com/in/albin-ryberg-bb22341a6/"
+                target="_blank"
+              >
                 <LinkedInIcon />
               </CircleDiv>
               <h1>Linked In</h1>
               <p>AlbinR</p>
             </ItemBox>
             <ItemBox>
-              <CircleDiv>
+              <CircleDiv href="https://twitter.com/AlbinRyberg" target="_blank">
                 <TwitterIcon />
               </CircleDiv>
               <h1>Twitter</h1>

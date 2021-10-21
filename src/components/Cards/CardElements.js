@@ -1,22 +1,25 @@
 import styled from "styled-components";
 import { FaGithub, FaReact } from "react-icons/fa";
 
-export const CardContainer = styled.div`
+export const CardContainer = styled.a`
   display: flex;
   justify-content: space-between;
-  background-color: #2a475e;
+  background-color: #171a21;
   color: #fff;
   border-radius: 10px;
   overflow: hidden;
-  width: 350px;
+  max-width: 400px;
   height: 200px;
   margin: 10px;
   border-left: 1px solid #66c0f4;
   border-top: 1px solid #66c0f4;
   border-bottom: 1px solid #66c0f4;
-  transition: all 0.2s ease-in-out;
+  transition: top 0.2s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  top: 0;
   :hover {
-    transform: scale(1.1);
+    top: -10px;
     color: #fff;
     outline: 0;
     box-shadow: 0 0 10px 4px#3498db;
@@ -26,7 +29,7 @@ export const CardContainer = styled.div`
 export const CardInfoBox = styled.div`
   display: flex;
   flex-direction: column;
-  width: 150px;
+  max-width: 200px;
 `;
 export const CardContent = styled.div`
   flex: 1 0 auto;
@@ -34,7 +37,7 @@ export const CardContent = styled.div`
 
 export const CardTitle = styled.div`
   padding: 20px 20px 5px 20px;
-  font-size: 30px;
+  font-size: calc(10px + 2vw);
 `;
 
 export const CardText = styled.div`
@@ -43,12 +46,10 @@ export const CardText = styled.div`
 
 export const IconBox = styled.div`
   display: flex;
-  justify-content: center;
-  align-items: center;
 `;
 
 export const GitIcon = styled(FaGithub)`
-  font-size: 50px;
+  font-size: 40px;
   margin: 10px;
 `;
 export const ReactIcon = styled(FaReact)`
@@ -57,8 +58,7 @@ export const ReactIcon = styled(FaReact)`
 `;
 
 export const ImageContainer = styled.div`
-  width: 200px;
-  height: 200px;
+  max-width: 200px;
   float: right;
   background-color: #fff;
   border-top-left-radius: 50%;
@@ -66,7 +66,7 @@ export const ImageContainer = styled.div`
   overflow: hidden;
 
   img {
-    width: 100%;
+    width: 200px;
     height: 100%;
     -o-object-fit: cover;
     object-fit: cover;

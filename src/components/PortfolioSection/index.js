@@ -33,14 +33,23 @@ const PortfolioSection = () => {
                 body="Tracks words in The Guardian."
                 imageUrl={BevNewsImg}
               />
+            </CardDiv>
+            <CardDiv>
               <Card
                 title="Quire"
                 body="Online note-taking app."
                 imageUrl={QuireImg}
               />
-            </CardDiv>
-            <CardDiv>
+
               <Card title="Cargo" body="Figma prototype made in react." />
+            </CardDiv>
+
+            <CardDiv>
+              <Card
+                title="Calculator"
+                body="Calculator made in react."
+                // imageUrl={Image}
+              />
               <Card
                 title="Calculator"
                 body="Calculator made in react."
