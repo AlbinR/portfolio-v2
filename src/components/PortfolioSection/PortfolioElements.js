@@ -10,7 +10,6 @@ export const PortfolioContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  border-bottom: 2px solid white;
 `;
 
 export const PortfolioWrapper = styled.div`
