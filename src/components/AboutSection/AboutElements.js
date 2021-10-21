@@ -6,6 +6,7 @@ export const AboutContainer = styled.div`
   width: 100%;
   min-height: 100vh;
   display: flex;
+  padding: 0 20px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -36,7 +37,7 @@ export const AboutText = styled.div`
   p {
     font-size: calc(10px + 1.2vw);
     margin-top: 5px;
-    padding: 20px;
+    line-height: 2;
     letter-spacing: 2px;
   }
 `;

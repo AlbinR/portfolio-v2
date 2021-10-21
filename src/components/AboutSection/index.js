@@ -10,12 +10,12 @@ const AboutSection = () => {
           <h1>About Me</h1>
           <br />
           <p>
-            word word word word word word word word word word word word word{" "}
+            Hi, my name is Albin Ryberg. I am currently studying front-end
+            development at KYH in Stockholm, Sweden.
           </p>
-          <p>word word word word word word word word word word word </p>
           <p>
-            word word word word word word word word word word word word word
-            word
+            When im not studying or developing i enjoy spending time with
+            friends, working out and playing some video games.
           </p>
           <p>word word word word word word word word word word word word </p>
         </AboutText>

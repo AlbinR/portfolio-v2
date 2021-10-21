@@ -32,13 +32,13 @@ const HeroSection = () => {
             </Title>
             <Name>
               <h2>
-                My name is <Underline>Albin Ryberg,</Underline>
+                my name is <Underline>Albin Ryberg</Underline>.
               </h2>
             </Name>
             <Intro>
               <h2>
-                I am a front-end developer studying at
-                <Underline> KYH</Underline> in Stockholm
+                i study front-end development and stuff at&nbsp;
+                <Underline>KYH</Underline> in Stockholm.
               </h2>
             </Intro>
           </Text>

@@ -145,6 +145,7 @@ export const Btn = styled(LinkS)`
   text-transform: uppercase;
   border-color: #3498db;
   color: #fff;
+  border-radius: 5px;
   box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
   transition: all 150ms ease-in-out;
   :hover,

@@ -3,22 +3,30 @@ import {
   CardContainer,
   ImageContainer,
   CardTitle,
-  CardBody,
+  CardText,
+  CardInfoBox,
+  CardContent,
+  IconBox,
+  GitIcon,
+  ReactIcon,
 } from "./CardElements";
 
 export const Card = ({ title, imageUrl, body }) => {
   return (
     <>
       <CardContainer>
+        <CardInfoBox>
+          <CardContent>
+            <CardTitle>{title}</CardTitle>
+            <CardText>{body}</CardText>
+          </CardContent>
+          <IconBox>
+            <GitIcon />
+          </IconBox>
+        </CardInfoBox>
         <ImageContainer>
           <img src={imageUrl} alt=""></img>
         </ImageContainer>
-        <CardTitle>
-          <h3>{title}</h3>
-        </CardTitle>
-        <CardBody>
-          <p>{body}</p>
-        </CardBody>
       </CardContainer>
     </>
   );
