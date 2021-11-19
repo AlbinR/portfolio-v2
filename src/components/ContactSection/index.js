@@ -36,7 +36,7 @@ const ContactSection = () => {
                 <LinkedInIcon />
               </CircleDiv>
               <h1>Linked In</h1>
-              <p>AlbinR</p>
+              <p>Albin Ryberg</p>
             </ItemBox>
             <ItemBox>
               <CircleDiv href="https://twitter.com/AlbinRyberg" target="_blank">

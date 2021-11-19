@@ -37,7 +37,7 @@ export const CardContent = styled.div`
 
 export const CardTitle = styled.div`
   padding: 20px 20px 5px 20px;
-  font-size: calc(10px + 2vw);
+  font-size: 35px;
 `;
 
 export const CardText = styled.div`
@@ -64,7 +64,6 @@ export const ImageContainer = styled.div`
   border-top-left-radius: 50%;
   border-bottom-left-radius: 50%;
   overflow: hidden;
-
   img {
     width: 200px;
     height: 100%;

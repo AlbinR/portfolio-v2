@@ -17,7 +17,7 @@ const AboutSection = () => {
             When im not studying or developing i enjoy spending time with
             friends, working out and playing some video games.
           </p>
-          <p>word word word word word word word word word word word word </p>
+          <p>I enjoy tinkering with things like keyboards and stuff too. </p>
         </AboutText>
       </AboutWrapper>
     </AboutContainer>

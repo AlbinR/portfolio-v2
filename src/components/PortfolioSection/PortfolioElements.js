@@ -24,14 +24,12 @@ export const PortfolioWrapper = styled.div`
 
 export const Title = styled.div`
   width: 80vw;
-  margin: auto;
   border-radius: 10px;
   margin-bottom: 6%;
   h1 {
     font-size: calc(16px + 3vw);
     font-weight: bold;
     padding: 20px;
-    margin: auto;
   }
 `;
 
@@ -47,4 +45,8 @@ export const CardDiv = styled.div`
   flex-direction: row;
   width: 100%;
   flex-wrap: wrap;
+`;
+
+export const ALink = styled.a`
+  text-decoration: none;
 `;

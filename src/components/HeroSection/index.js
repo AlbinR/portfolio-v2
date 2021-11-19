@@ -37,7 +37,7 @@ const HeroSection = () => {
             </Name>
             <Intro>
               <h2>
-                i study front-end development and stuff at&nbsp;
+                junior front-end developer studying at&nbsp;
                 <Underline>KYH</Underline> in Stockholm.
               </h2>
             </Intro>

@@ -8,7 +8,6 @@ import {
   CardContent,
   IconBox,
   GitIcon,
-  ReactIcon,
 } from "./CardElements";
 
 export const Card = ({ title, imageUrl, body }) => {

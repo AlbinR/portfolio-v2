@@ -2,6 +2,8 @@ import React from "react";
 import PortfolioImg from "../../images/portfoliosite.jpg";
 import BevNewsImg from "../../images/bevnews.jpg";
 import QuireImg from "../../images/quire.jpg";
+import CargoImg from "../../images/Cargo.jpg";
+import CalculatorImg from "../../images/Calculator.PNG";
 
 import {
   PortfolioContainer,
@@ -9,6 +11,7 @@ import {
   Title,
   Cards,
   CardDiv,
+  ALink,
 } from "./PortfolioElements";
 
 import Card from "../Cards";
@@ -23,38 +26,60 @@ const PortfolioSection = () => {
           </Title>
           <Cards>
             <CardDiv>
-              <Card
-                title="Porfolio"
-                body="The code for this portfolio site."
-                imageUrl={PortfolioImg}
-              />
-              <Card
-                title="BevNews"
-                body="Tracks words in The Guardian."
-                imageUrl={BevNewsImg}
-              />
+              <ALink
+                href="https://github.com/AlbinR/portfolio-v2"
+                target="_blank"
+              >
+                <Card
+                  title="Porfolio"
+                  body="The code for this portfolio site."
+                  imageUrl={PortfolioImg}
+                />
+              </ALink>
+
+              <ALink
+                href="https://github.com/Viktor-Hultman/BevNews"
+                target="_blank"
+              >
+                <Card
+                  title="BevNews"
+                  body="Tracks words in The Guardian."
+                  imageUrl={BevNewsImg}
+                />
+              </ALink>
             </CardDiv>
             <CardDiv>
-              <Card
-                title="Quire"
-                body="Online note-taking app."
-                imageUrl={QuireImg}
-              />
+              <ALink
+                href="https://github.com/Voltair88/fe20tp1_-Vellum-"
+                target="_blank"
+              >
+                <Card
+                  title="Quire"
+                  body="Online note-taking app."
+                  imageUrl={QuireImg}
+                />
+              </ALink>
 
-              <Card title="Cargo" body="Figma prototype made in react." />
+              <ALink href="https://github.com/AlbinR/cargo" target="_blank">
+                <Card
+                  title="Cargo"
+                  body="Figma prototype made in react."
+                  imageUrl={CargoImg}
+                />
+              </ALink>
             </CardDiv>
 
             <CardDiv>
-              <Card
-                title="Calculator"
-                body="Calculator made in react."
-                // imageUrl={Image}
-              />
-              <Card
-                title="Calculator"
-                body="Calculator made in react."
-                // imageUrl={Image}
-              />
+              <ALink
+                href="https://github.com/AlbinR/react-calculator"
+                target="_blank"
+              >
+                <Card
+                  title="Calculator"
+                  body="Calculator made in react. (with tutorial)"
+                  imageUrl={CalculatorImg}
+                />
+              </ALink>
             </CardDiv>
           </Cards>
         </PortfolioWrapper>
