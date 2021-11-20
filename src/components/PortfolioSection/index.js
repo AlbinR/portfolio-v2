@@ -85,6 +85,17 @@ const PortfolioSection = () => {
                   imageUrl={CalculatorImg}
                 />
               </ALink>
+              <ALink
+                href="https://github.com/AlbinR/react-calculator"
+                target="_blank"
+              >
+                <Card
+                  title="Camera"
+                  body="Camera App made in react native. (with tutorial)"
+                  year="2021"
+                  // imageUrl={}
+                />
+              </ALink>
             </CardDiv>
           </Cards>
         </PortfolioWrapper>
