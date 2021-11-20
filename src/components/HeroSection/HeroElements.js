@@ -124,7 +124,8 @@ export const Btn = styled(LinkS)`
   box-sizing: border-box;
   appearance: none;
   background-color: transparent;
-  width: 110px;
+  width: 130px;
+  letter-spacing: 2px;
   border: 1px solid #3498db;
   color: #3498db;
   cursor: pointer;

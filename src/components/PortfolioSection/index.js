@@ -33,6 +33,7 @@ const PortfolioSection = () => {
                 <Card
                   title="Porfolio"
                   body="The code for this portfolio site."
+                  year="2021"
                   imageUrl={PortfolioImg}
                 />
               </ALink>
@@ -44,6 +45,7 @@ const PortfolioSection = () => {
                 <Card
                   title="BevNews"
                   body="Tracks words in The Guardian."
+                  year="2020"
                   imageUrl={BevNewsImg}
                 />
               </ALink>
@@ -56,6 +58,7 @@ const PortfolioSection = () => {
                 <Card
                   title="Quire"
                   body="Online note-taking app."
+                  year="2020"
                   imageUrl={QuireImg}
                 />
               </ALink>
@@ -64,6 +67,7 @@ const PortfolioSection = () => {
                 <Card
                   title="Cargo"
                   body="Figma prototype made in react."
+                  year="2021"
                   imageUrl={CargoImg}
                 />
               </ALink>
@@ -77,6 +81,7 @@ const PortfolioSection = () => {
                 <Card
                   title="Calculator"
                   body="Calculator made in react. (with tutorial)"
+                  year="2021"
                   imageUrl={CalculatorImg}
                 />
               </ALink>

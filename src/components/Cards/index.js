@@ -8,9 +8,10 @@ import {
   CardContent,
   IconBox,
   GitIcon,
+  CardAge,
 } from "./CardElements";
 
-export const Card = ({ title, imageUrl, body }) => {
+export const Card = ({ title, imageUrl, body, year }) => {
   return (
     <>
       <CardContainer>
@@ -21,6 +22,9 @@ export const Card = ({ title, imageUrl, body }) => {
           </CardContent>
           <IconBox>
             <GitIcon />
+            <CardAge>
+              <p>{year}</p>
+            </CardAge>
           </IconBox>
         </CardInfoBox>
         <ImageContainer>

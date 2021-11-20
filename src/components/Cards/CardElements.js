@@ -11,9 +11,9 @@ export const CardContainer = styled.a`
   max-width: 400px;
   height: 200px;
   margin: 10px;
-  border-left: 1px solid #66c0f4;
-  border-top: 1px solid #66c0f4;
-  border-bottom: 1px solid #66c0f4;
+  border-left: 2px solid #66c0f4;
+  border-top: 2px solid #66c0f4;
+  border-bottom: 2px solid #66c0f4;
   transition: top 0.2s ease-in-out;
   cursor: pointer;
   position: relative;
@@ -25,8 +25,8 @@ export const CardContainer = styled.a`
     box-shadow: 0 0 10px 4px#3498db;
   }
   @media screen and (max-width: 768px) {
-    zoom: 0.6;
-    -moz-transform: scale(0.6);
+    zoom: 0.72;
+    -moz-transform: scale(0.72);
     transition: top 0.2s ease-in-out;
   }
 `;
@@ -51,12 +51,19 @@ export const CardText = styled.div`
 
 export const IconBox = styled.div`
   display: flex;
+  align-items: center;
+  p {
+    font-size: 15px;
+    color: gray;
+  }
 `;
 
 export const GitIcon = styled(FaGithub)`
   font-size: 40px;
   margin: 10px;
 `;
+
+export const CardAge = styled.div``;
 
 export const ImageContainer = styled.div`
   max-width: 200px;

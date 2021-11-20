@@ -6,7 +6,7 @@ export const ContactContainer = styled.div`
   color: #fff;
   background: #16202d;
   width: 100%;
-  min-height: 100vh;
+  min-height: 90vh;
   display: flex;
   padding: 0 20px;
   flex-direction: column;
@@ -29,7 +29,6 @@ export const Title = styled.div`
   width: 80vw;
   margin: auto;
   border-radius: 10px;
-  margin-bottom: 6%;
   h1 {
     font-size: calc(16px + 3vw);
     font-weight: bold;
@@ -52,20 +51,23 @@ export const ItemBox = styled.div`
   align-items: center;
   margin: 50px;
   h1 {
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 100;
     color: #65bef2;
     padding: 20px;
   }
+  p {
+    font-size: 20px;
+  }
   @media screen and (max-width: 768px) {
-    zoom: 0.5;
-    -moz-transform: scale(0.5);
+    zoom: 0.4;
+    -moz-transform: scale(0.4);
   }
 `;
 
 export const CircleDiv = styled.a`
-  width: 150px;
-  height: 150px;
+  width: 190px;
+  height: 190px;
   background-color: #171a21;
   border-radius: 50%;
   display: flex;
@@ -81,14 +83,14 @@ export const CircleDiv = styled.a`
   }
 `;
 export const GitIcon = styled(FaGithub)`
-  font-size: 40px;
+  font-size: 60px;
 `;
 export const LinkedInIcon = styled(FaLinkedinIn)`
-  font-size: 40px;
+  font-size: 60px;
 `;
 export const TwitterIcon = styled(FaTwitter)`
-  font-size: 40px;
+  font-size: 60px;
 `;
 export const EmailIcon = styled(MdEmail)`
-  font-size: 40px;
+  font-size: 60px;
 `;
