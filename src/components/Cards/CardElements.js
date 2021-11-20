@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FaGithub, FaReact } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 export const CardContainer = styled.a`
   display: flex;
@@ -23,6 +23,11 @@ export const CardContainer = styled.a`
     color: #fff;
     outline: 0;
     box-shadow: 0 0 10px 4px#3498db;
+  }
+  @media screen and (max-width: 768px) {
+    zoom: 0.6;
+    -moz-transform: scale(0.6);
+    transition: top 0.2s ease-in-out;
   }
 `;
 
@@ -50,10 +55,6 @@ export const IconBox = styled.div`
 
 export const GitIcon = styled(FaGithub)`
   font-size: 40px;
-  margin: 10px;
-`;
-export const ReactIcon = styled(FaReact)`
-  font-size: 50px;
   margin: 10px;
 `;
 

@@ -37,6 +37,7 @@ export const Cards = styled.div`
   display: flex;
   justify-content: center;
   flex-direction: column;
+  flex-wrap: wrap;
 `;
 
 export const CardDiv = styled.div`

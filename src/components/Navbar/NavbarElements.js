@@ -49,7 +49,6 @@ export const NavMenu = styled.ul`
   align-items: center;
   list-style: none;
   text-align: center;
-  margin-right: -22px;
   @media screen and (max-width: 768px) {
     display: none;
   }
@@ -72,7 +71,9 @@ export const NavLinks = styled(LinkS)`
   transition: 0.2s;
 
   &.active {
-    border-bottom: 2px solid #4b8ea9;
+    border-bottom: 2px solid #3498db;
+    /* box-shadow: 0 12px 7px 6px #3498db; */
+    /* box-shadow: 0 0 10px -20px #3498db inset, 0 0 10px -4px #3498db; */
     color: #fff;
     transition: 0;
   }

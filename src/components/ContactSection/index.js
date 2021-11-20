@@ -46,7 +46,7 @@ const ContactSection = () => {
               <p>@AlbinRyberg</p>
             </ItemBox>
             <ItemBox>
-              <CircleDiv>
+              <CircleDiv href="mailto: albin@rybergs.net">
                 <EmailIcon />
               </CircleDiv>
               <h1>Email</h1>

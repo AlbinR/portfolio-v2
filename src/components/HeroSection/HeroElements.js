@@ -7,9 +7,9 @@ export const HeroContainer = styled.div`
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 0 20px;
   min-height: 100vh;
   position: relative;
+  padding: 0 20px;
   z-index: 1;
 
   :before {
@@ -56,7 +56,7 @@ export const HeroContent = styled.div`
 `;
 export const Header = styled.div`
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   color: #fff;
   margin-bottom: 40px;
@@ -69,34 +69,29 @@ export const Text = styled.div`
   flex-direction: column;
 `;
 
+export const Title = styled.div`
+  font-size: calc(20px + 2vw);
+  @media screen and (max-width: 768px) {
+  } ;
+`;
 export const Underline = styled.span`
   border-bottom: 2px solid #3498db;
 `;
 
-export const Title = styled.div`
-  font-size: calc(20px + 3vw);
-  @media screen and (max-width: 768px) {
-    align-items: center;
-  } ;
-`;
 export const Name = styled.div`
-  font-size: calc(15px + 1.2vw);
+  font-size: calc(10px + 1vw);
   @media screen and (max-width: 768px) {
-    font-size: 15px;
   } ;
 `;
 export const Intro = styled.div`
-  display: flex;
-  justify-content: center;
-  font-size: calc(5px + 1.2vw);
+  font-size: calc(6px + 1vw);
   @media screen and (max-width: 768px) {
-    font-size: 10px;
-    flex-direction: column;
   } ;
 `;
 export const ImageContainer = styled.div`
   width: 400px;
   height: 400px;
+  border-radius: 50%;
   @media screen and (max-width: 768px) {
     width: 200px;
     height: 200px;
@@ -145,7 +140,7 @@ export const Btn = styled(LinkS)`
   text-transform: uppercase;
   border-color: #3498db;
   color: #fff;
-  border-radius: 5px;
+  /* border-radius: 5px; */
   box-shadow: 0 0 40px 40px #3498db inset, 0 0 0 0 #3498db;
   transition: all 150ms ease-in-out;
   :hover,

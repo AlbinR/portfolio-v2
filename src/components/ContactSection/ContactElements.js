@@ -57,6 +57,10 @@ export const ItemBox = styled.div`
     color: #65bef2;
     padding: 20px;
   }
+  @media screen and (max-width: 768px) {
+    zoom: 0.5;
+    -moz-transform: scale(0.5);
+  }
 `;
 
 export const CircleDiv = styled.a`
