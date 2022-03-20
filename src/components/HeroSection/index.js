@@ -55,27 +55,7 @@ const HeroSection = () => {
             exact="true"
             offset={-80}
           >
-            About
-          </Btn>
-          <Btn
-            to="portfolio"
-            smooth={true}
-            spy={true}
-            duration={500}
-            exact="true"
-            offset={-80}
-          >
-            Portfolio
-          </Btn>
-          <Btn
-            to="contact"
-            smooth={true}
-            spy={true}
-            duration={500}
-            exact="true"
-            offset={-80}
-          >
-            Contact
+            More
           </Btn>
         </Buttons>
       </HeroContent>
